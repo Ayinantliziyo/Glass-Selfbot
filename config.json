@@ -1,0 +1,17 @@
+{
+    "token": "",
+    "prefix": "//",
+    "delete timer": 30,
+    "title": "Glass Selfbot",
+    "fake emotes prefix": "fe",
+    "sniper": {
+        "nitro sniper": true,
+        "giveaway sniper": false,
+        "giveaway delay": 30
+    },
+    "dank": {
+        "event delay": 3,
+        "channel whitelist": true,
+        "channels": []
+    }
+}

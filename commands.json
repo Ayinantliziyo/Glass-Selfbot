@@ -1,0 +1,486 @@
+{
+  "commands": {
+    "text": {
+      "clean": {
+        "description": "Delete all messages sent by you in the last number of messages in the channel the command was executed in",
+        "usage": "clean <number/all/stop>",
+        "aliases": "",
+        "tips": "You can put \"all\" as the number to delete every message sent by you in the channel the command was executed in\nYou can also put \"stop\" as the number to stop all current cleaning"
+      },
+      "spam": {
+        "description": "Spam the given message a number of times",
+        "usage": "spam <number> <message>",
+        "aliases": "",
+        "tips": "You can put \"stop\" as the number to stop all current spamming"
+      },
+      "spoiler": {
+        "description": "Put a spoiler around every letter to make it annoying to read",
+        "usage": "spoiler <text>",
+        "aliases": "",
+        "tips": ""
+      },
+      "hide": {
+        "description": "Hide text so that it still functions, but isn't shown",
+        "usage": "hide \"<shown text>\" \"<hidden text>\"",
+        "aliases": "",
+        "tips": "This can be used to hide link text that have embeds, hide invites while keeping the join button, or hiding pings"
+      },
+      "ascii": {
+        "description": "Turn text into ASCII art",
+        "usage": "ascii <text>",
+        "aliases": "",
+        "tips": ""
+      },
+      "encode": {
+        "description": "Encode a message into base64",
+        "usage": "encode <text>",
+        "aliases": "",
+        "tips": ""
+      },
+      "decode": {
+        "description": "Decode a message from base64",
+        "usage": "decode <text>",
+        "aliases": "",
+        "tips": ""
+      }
+    },
+    "utility": {
+      "ping": {
+        "description": "Get the latency of the selfbot",
+        "usage": "ping",
+        "aliases": "",
+        "tips": ""
+      },
+      "uptime": {
+        "description": "Get the amount of time that the selfbot has been running",
+        "usage": "uptime",
+        "aliases": "",
+        "tips": ""
+      },
+      "chatexport": {
+        "description": "Export the chat and save it as an html",
+        "usage": "",
+        "aliases": "",
+        "tips": ""
+      },
+      "servericon": {
+        "description": "Get the server icon of the current/inputted server",
+        "usage": "servericon (server ID)",
+        "aliases": "",
+        "tips": "If you don't put a server ID, it will get the icon of the server the command was run in"
+      },
+      "avatar": {
+        "description": "Get the avatar of a user",
+        "usage": "avatar <user>",
+        "aliases": "av",
+        "tips": ""
+      },
+      "revavatar": {
+        "description": "Reverse Google search a user's avatar",
+        "usage": "revavatar <user>",
+        "aliases": "revav",
+        "tips": ""
+      },
+      "exportfriends": {
+        "description": "Export your friend list to a txt file",
+        "usage": "exportfriends",
+        "aliases": "",
+        "tips": ""
+      },
+      "memberinfo": {
+        "description": "Get information about a member",
+        "usage": "memberinfo <member>",
+        "aliases": "",
+        "tips": "Can only be used in servers"
+      },
+      "userinfo": {
+        "description": "Get information about a user",
+        "usage": "userinfo <user>",
+        "aliases": "",
+        "tips": ""
+      },
+      "roleinfo": {
+        "description": "Get information about a role",
+        "usage": "roleinfo <role>",
+        "aliases": "",
+        "tips": "Can only be used in servers"
+      },
+      "ipinfo": {
+        "description": "Get information about the given IP address",
+        "usage": "ipinfo <ip>",
+        "aliases": "",
+        "tips": ""
+      },
+      "tokeninfo": {
+        "description": "Get information about a token",
+        "usage": "tokeninfo <token>",
+        "aliases": "",
+        "tips": ""
+      },
+      "shorten": {
+        "description": "Shorten a URL using TinyURL",
+        "usage": "shorten <link>",
+        "aliases": "",
+        "tips": ""
+      },
+      "hypesquad": {
+        "description": "Change your Hypesquad badge",
+        "usage": "hypesquad <bravery/brilliance/balance>",
+        "alises": "",
+        "tips": ""
+      },
+      "nitro": {
+        "description": "Generate a number of random nitro classic code",
+        "usage": "nitro <number>",
+        "aliases": "",
+        "tips": ""
+      },
+      "timer": {
+        "description": "Set a timer for a duration",
+        "usage": "timer <time> (user)",
+        "alises": "",
+        "tips": "You can use shorthand for time.(1m = 60 seconds) If a user is input, they will get pinged when the timer is over"
+      }
+    },
+    "admin": {
+      "kick": {
+        "description": "Kick the inputted member with given reason",
+        "usage": "kick <member> (reason)",
+        "aliases": "",
+        "tips": "You can mention the user or put in their user ID to kick them. Reason is optional"
+      },
+      "ban": {
+        "description": "Ban the inputted member with given reason",
+        "usage": "ban <member> (reason)",
+        "aliases": "",
+        "tips": "You can mention the user or put in their user ID to ban them. Reason is optional"
+      },
+      "nuke": {
+        "description": "Nuke(delete and recreate) the current/inputted channel",
+        "usage": "nuke (channel)",
+        "aliases": "",
+        "tips": "If you don't tag or put in a channel ID, it will nuke the current channel"
+      },
+      "nuketimer": {
+        "description": "Show a countdown until the channel is nuked and send a nuke gif afterwards",
+        "usage": "nuketimer (channel)",
+        "aliases": "",
+        "tips": "If you don't tag or put in a channel ID, it will nuke the current channel"
+      }
+    },
+    "abuse": {
+      "destroyserver": {
+        "description": "Delete all channels, roles, etc. and spam new ones",
+        "usage": "destroyserver (name)",
+        "aliases": "",
+        "tips": "The name will be used for channel naming, role naming, and server naming. It will default to your title if not set\nUh oh... Where's the undo button. Bye bye server"
+      },
+      "nukeserver": {
+        "description": "Delete all channels, roles, etc.",
+        "usage": "nukeserver",
+        "aliases": "",
+        "tips": ""
+      },
+      "nukechannel": {
+        "description": "Delete all channels",
+        "usage": "nukechannel",
+        "alises": "",
+        "tips": ""
+      },
+      "nukerole": {
+        "description": "Delete all roles",
+        "usage": "nukerole",
+        "alises": "",
+        "tips": ""
+      },
+      "nukeemoji": {
+        "description": "Delete all emojis",
+        "usage": "nukeemoji",
+        "alises": "",
+        "tips": ""
+      },
+      "spamchannel": {
+        "description": "Spam channels",
+        "usage": "spamchannel (name)",
+        "alises": "",
+        "tips": "The name will be used for channel naming. It will default to your title if not set"
+      },
+      "spamrole": {
+        "description": "Spam roles",
+        "usage": "spamrole (name)",
+        "alises": "",
+        "tips": "The name will be used to role naming. It will default to your title if not set"
+      },
+      "tokennuke": {
+        "description": "Destroy a token and mess with it making it almost impossible to use that account",
+        "usage": "tokennuke <token>",
+        "aliases": "",
+        "tips": "Don't put your token in"
+      }
+    },
+    "config": {
+      "prefix": {
+        "description": "Change the prefix of Glass Selfbot",
+        "usage": "prefix <prefix>",
+        "aliases": "",
+        "tips": ""
+      },
+      "title": {
+        "description": "Change the title that shows up in the help menu",
+        "usage": "title <title>",
+        "aliases": "",
+        "tips": ""
+      },
+      "nitrosniper": {
+        "description": "Toggle the nitro sniper",
+        "usage": "nitrosniper",
+        "aliases": "",
+        "tips": ""
+      },
+      "deletetimer": {
+        "description": "Change the delete timer for some commands that delete automatically",
+        "usage": "deletetimer <time>",
+        "aliases": "",
+        "tips": ""
+      },
+      "giveawaysniper": {
+        "description": "Toggle the giveaway sniepr",
+        "usage": "giveawaysniper",
+        "alises": "",
+        "tips": ""
+      },
+      "giveawaydelay": {
+        "description": "Change the delay for the giveaway sniper",
+        "usage": "giveawaydelay <delay>",
+        "alises": "",
+        "tips": ""
+      },
+      "reload": {
+        "description": "Reload the configs of Glass Selfbot if you change something manually",
+        "usage": "reload",
+        "aliases": "",
+        "tips": "Some changes will still require a restart"
+      }
+    },
+    "fun": {
+      "meme": {
+        "description": "Get a random meme from Reddit",
+        "usage": "meme",
+        "alises": "",
+        "tips": ""
+      },
+      "lmgtfy": {
+        "description": "Let me google that for you. For rerards who don't know how to Google",
+        "usage": "lmgtfy <text>",
+        "aliases": "",
+        "tips": ""
+      },
+      "tts": {
+        "description": "Convert a message to Text To Speech",
+        "usage": "tts <text>",
+        "aliases": "",
+        "tips": ""
+      },
+      "dick": {
+        "description": "Use linear algebra to calculate a user's dick length",
+        "usage": "dick <user>",
+        "aliases": "dickcalc, dickcalculator",
+        "tips": ""
+      },
+      "gay": {
+        "description": "Look at a user's full message history to determine how gay they are",
+        "usage": "gay <user>",
+        "aliases": "gaycalc, gaycalculator",
+        "tips": ""
+      },
+      "minesweeper": {
+        "description": "Create a game of minesweeper using spoilers with a given size(default is 5)",
+        "usage": "minesweeper <number>",
+        "aliases": "",
+        "tips": ""
+      },
+      "kiss": {
+        "description": "Kiss the inputted user(sends an anime kissing gif)",
+        "usage": "kiss <user>",
+        "aliases": "",
+        "tips": ""
+      },
+      "hug": {
+        "description": "Hug the inputted user(sends an anime hugging gif)",
+        "usage": "hug <user>",
+        "aliases": "",
+        "tips": ""
+      },
+      "slap": {
+        "description": "Slap the inputted user(sends an anime slapping gif)",
+        "usage": "slap <user>",
+        "aliases": "",
+        "tips": ""
+      },
+      "pat": {
+        "description": "Pat the inputted user(sends an anime patting gif)",
+        "usage": "pat <user>",
+        "aliases": "",
+        "tips": ""
+      },
+      "poke": {
+        "description": "Poke the inputted user(sends an anime poking gif)",
+        "usage": "poke <user>",
+        "aliases": "",
+        "tips": ""
+      },
+      "cuddle": {
+        "description": "Cuddle the inputted user(sends an anime cuddling gif)",
+        "usage": "cuddle <user>",
+        "aliases": "",
+        "tips": ""
+      },
+      "feed": {
+        "description": "Feed the inputted user(sends an anime feeding gif)",
+        "usage": "feed <user>",
+        "aliases": "",
+        "tips": ""
+      }
+    },
+    "image": {
+      "tweet": {
+        "description": "Create a fake tweet with a given name and text",
+        "usage": "tweet <name> <text>",
+        "aliases": "",
+        "tips": "If the name is multiple words, put quotes around it"
+      },
+      "gayavatar": {
+        "description": "Make a user's avatar gay",
+        "usage": "gay <user>",
+        "alises": "",
+        "tips": ""
+      },
+      "glassavatar": {
+        "description": "Put a glass texture over a user's avatar",
+        "usage": "glass <user>",
+        "alises": "",
+        "tips": ""
+      },
+      "wasted": {
+        "description": "Put a wasted overlay on a user's avatar",
+        "usage": "wasted <user>",
+        "alises": "",
+        "tips": ""
+      },
+      "triggered": {
+        "description": "Put a triggered overlay on a user's avatar",
+        "usage": "triggered <user>",
+        "alises": "",
+        "tips": ""
+      },
+      "grayscale": {
+        "description": "Make a user's avatar grayscale",
+        "usage": "grayscale <user>",
+        "alises": "",
+        "tips": ""
+      },
+      "invert": {
+        "description": "Invert the colors of a user's avatar",
+        "usage": "invert <user>",
+        "alises": "",
+        "tips": ""
+      },
+      "blur": {
+        "description": "Blue a user's avatar",
+        "usage": "blur <user>",
+        "alises": "",
+        "tips": ""
+      }
+    },
+    "nsfw": {
+      "pussy": {
+        "description": "Sends hentai pussy image/gif",
+        "usage": "pussy",
+        "aliases": "",
+        "tips": "Get ready to clean up a mess"
+      },
+      "boobs": {
+        "description": "Sends hentai boobs image/gif",
+        "usage": "boobs",
+        "aliases": "",
+        "tips": "Make sure nobody is around"
+      },
+      "hentai": {
+        "description": "Sends hentai image/gif",
+        "usage": "hentai",
+        "aliases": "",
+        "tips": "Hey! Keep your pants on!"
+      },
+      "blowjob": {
+        "description": "Sends hentai blowjob image/gif",
+        "usage": "blowjob",
+        "aliases": "",
+        "tips": "That's some nice sloppy toppy"
+      },
+      "feet": {
+        "description": "Sends hentai feet iamge/gif",
+        "usage": "feet",
+        "aliases": "",
+        "tips": "Mmmmmmm!!! Feet. Yummy"
+      }
+    },
+    "raid": {
+      "rjoin": {
+        "description": "All the tokens join a server using an invite code(last group of characters of an invite link)",
+        "usage": "rjoin <invite code>",
+        "aliases": "",
+        "tips": ""
+      },
+      "rleave": {
+        "description": "All the tokens leave a server using a server ID",
+        "usage": "rleave <server ID>",
+        "aliases": "",
+        "tips": ""
+      },
+      "rspam": {
+        "description": "All the tokens spam a message in a channel a number of times",
+        "usage": "rspam <channel ID> <number> <message>",
+        "aliases": "",
+        "tips": ""
+      },
+      "rlag": {
+        "description": "All the tokens send a lag message in channel a number of times",
+        "usage": "rlag <channel ID> <number>",
+        "aliases": "",
+        "tips": ""
+      }
+    },
+    "dank": {
+      "daddchannel": {
+        "description": "Add a channel to the event channel list(automatically join Dank Memer events)",
+        "usage": "daddchannel <channel>",
+        "aliases": "",
+        "tips": ""
+      },
+      "dremovechannel": {
+        "description": "Remove a channel from the event channel list(automatically join Dank Memer events)",
+        "usage": "dremovechannel <channel>",
+        "aliases": "",
+        "tips": ""
+      },
+      "dwhitelist": {
+        "description": "Toggle automatic Dank Memer event joining between whitelist and blacklist for channel filter",
+        "usage": "dwhitelist",
+        "aliases": "",
+        "tips": ""
+      }
+    }
+  },
+  "descriptions": {
+    "text": "Commands that add/delete/modify messages",
+    "utility": "Variety of tools that can be used",
+    "admin": "Commands to help with administrating or moderating a server",
+    "abuse": "Abuse commands",
+    "config": "Change bot settings",
+    "fun": "Fun commands",
+    "image": "Image commands",
+    "nsfw": "Not safe for work image/gif commands",
+    "raid": "Server raiding using user tokens",
+    "dank": "Advanced Dank Memer farming commands"
+  }
+}
